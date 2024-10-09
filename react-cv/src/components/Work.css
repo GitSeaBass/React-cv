@@ -2,11 +2,16 @@
     height: 100vh;
     background-color: plum;
     text-align: center;
-    padding: 10% 20px;
+    padding: 0 20px;
+}
+
+.work-main > h1 {
+    margin-top: 0;
+    padding-top: 50px;
 }
 
 .jobs-container {
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -36,5 +41,6 @@
 
 .job-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-right: 10%;
 }
