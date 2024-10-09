@@ -1,10 +1,10 @@
 import './Main.css'
 import NavBar from "./NavBar";
 
-function Main({aboutRef}) {
+function Main({aboutRef, projectsRef, workRef}) {
     return (
         <div className="main">
-            <NavBar aboutRef={aboutRef}/>
+            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef}/>
         </div>
     )
 }

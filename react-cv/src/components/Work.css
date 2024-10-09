@@ -1,0 +1,40 @@
+.work-main {
+    height: 100vh;
+    background-color: plum;
+    text-align: center;
+    padding: 10% 20px;
+}
+
+.jobs-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.job {
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-img {
+    width: 200px;
+    margin-top: 5%;
+}
+
+.job-description {
+    width: 60%;
+}
+
+.job-description > ul {
+    text-align: left;
+}
+
+.job-description > ul > li {
+    margin-bottom: 10px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-around;
+}

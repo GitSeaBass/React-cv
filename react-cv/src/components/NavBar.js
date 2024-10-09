@@ -1,16 +1,23 @@
 import './NavBar.css'
 
-function NavBar({aboutRef}) {
-    const scrollAbout = e => {
+function NavBar({aboutRef, projectsRef, workRef}) {
+    const scrollAbout = () => {
         aboutRef.current.scrollIntoView({behavior: "smooth"})
     }
 
+    const scrollProjects = () => {
+        projectsRef.current.scrollIntoView({behavior: "smooth"})
+    }
+
+    const scrollWork = () => {
+        workRef.current.scrollIntoView({behavior: "smooth"})
+    }
 
     return (
         <div className="bar">
             <button className="nav" onClick={scrollAbout}>About</button>
-            <button className="nav">Projects</button>
-            <button className="nav">Work</button>
+            <button className="nav" onClick={scrollProjects}>Projects</button>
+            <button className="nav" onClick={scrollWork}>Work</button>
         </div>
     )
 }
