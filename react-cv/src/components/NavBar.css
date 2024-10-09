@@ -1,0 +1,21 @@
+.bar {
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: right;
+    gap: 5%;
+    padding: 1% 5% 0 0;
+}
+
+.nav {
+    border: none;
+    background-color: transparent;
+    font-size: 1.3em;
+    border-radius: 25%;
+    transition: 0.3s;
+}
+
+.nav:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
