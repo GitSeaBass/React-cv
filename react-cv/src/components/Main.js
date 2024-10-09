@@ -1,10 +1,10 @@
 import './Main.css'
 import NavBar from "./NavBar";
 
-function Main() {
+function Main({aboutRef}) {
     return (
         <div className="main">
-            <NavBar/>
+            <NavBar aboutRef={aboutRef}/>
         </div>
     )
 }
