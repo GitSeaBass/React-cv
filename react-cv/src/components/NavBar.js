@@ -5,6 +5,7 @@ function NavBar() {
         <div className="bar">
             <button className="nav">About</button>
             <button className="nav">Projects</button>
+            <button className="nav">Work</button>
         </div>
     )
 }
