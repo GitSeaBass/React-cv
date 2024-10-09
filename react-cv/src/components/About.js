@@ -11,7 +11,7 @@ function About({aboutRef}) {
             <hr />
             
             <div className="experience-div">
-                <h3>Experience With</h3>
+                <h3 className='about-header'>Experience With</h3>
                 <div className="coding-lang-flex">
                     <LangContainer img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s" des="React"/>
                     <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" des="Javascript"/>
@@ -27,7 +27,7 @@ function About({aboutRef}) {
             <hr />
 
             <div className="soft-skills-container">
-                <h3>Other Skills</h3>
+                <h3 className='about=header'>Other Skills</h3>
 
             </div>
         </div>
