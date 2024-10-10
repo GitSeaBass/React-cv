@@ -53,9 +53,18 @@ function Projects({projectsRef}) {
             <h1>My Projects</h1>
 
             <div className='projects-container'>
-                <ProjectBox />
-                <ProjectBox />
-                <ProjectBox />
+                <div className='project-row'>
+                    <ProjectBox />
+                    <div className='fill-div'></div>
+                </div>
+                <div className='project-row'>
+                    <div className='fill-div'></div>
+                    <ProjectBox />
+                </div>
+                <div className='project-row'>
+                    <ProjectBox />
+                    <div className='fill-div'></div>
+                </div>
             </div>
         </div>
     )

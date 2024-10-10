@@ -1,6 +1,6 @@
 .work-main {
     height: 100vh;
-    background-color: rgb(26, 27, 56);
+    /*background-color: rgb(26, 27, 56);*/
     padding: 0 20px;
 }
 
@@ -14,7 +14,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     color: rgb(157, 156, 156);
 }
 

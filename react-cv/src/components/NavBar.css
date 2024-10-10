@@ -1,21 +1,27 @@
 .bar {
-    height: 50px;
     background-color: transparent;
     display: flex;
     justify-content: right;
-    gap: 5%;
     padding: 1% 5% 0 0;
 }
 
 .nav {
     border: none;
-    background-color: transparent;
     font-size: 1.3em;
-    border-radius: 25%;
     transition: 0.3s;
+    background-color: transparent;
+    height: 50px;
+    border-radius: 10px;
+    width: 100px;
 }
 
 .nav:hover {
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
+}
+
+.button-container {
+    background-color: skyblue;
+    border-radius: 10px;
+    border: 2px solid black;
 }

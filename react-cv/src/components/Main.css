@@ -1,5 +1,5 @@
 .main {
-    height: 100vh;
-    background-color: skyblue;
+    background-image: linear-gradient(to bottom, rgb(199, 246, 245) 0%,#88dbfc 97%, rgb(159, 229, 252));
+    height: 98vh;
     text-align: center;
 }
