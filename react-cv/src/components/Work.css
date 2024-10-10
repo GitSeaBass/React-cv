@@ -1,7 +1,6 @@
 .work-main {
     height: 100vh;
-    background-color: plum;
-    text-align: center;
+    background-color: rgb(26, 27, 56);
     padding: 0 20px;
 }
 
@@ -12,19 +11,22 @@
 
 .jobs-container {
     margin-top: 5%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 20px;
+    color: rgb(157, 156, 156);
 }
 
 .job {
-    display: flex;
-    justify-content: space-around;
+    width: 45%;
+    background-color: rgb(45, 45, 45);
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 .job-img {
-    width: 200px;
-    margin-top: 5%;
+    width: 100px;
 }
 
 .job-description {
@@ -40,7 +42,13 @@
 }
 
 .job-header {
+    padding-right: 10%;
+    text-align: left;
     display: flex;
     justify-content: space-between;
-    padding-right: 10%;
+    padding: 0 10px;
+}
+
+.header-remove-margin {
+    margin: 0;
 }
