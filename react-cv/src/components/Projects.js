@@ -1,18 +1,7 @@
 import './Projects.css'
-import { useState } from 'react';
+import ProjectBox from './ProjectBox';
 
-function Projects({projectsRef}) {
-    const [projectNum, setProjectNum] = useState(0)
-    
-    const leftArrow = () => {
-        setProjectNum(projectNum - 1)
-    }
-
-    const rightArrow = () => {
-        setProjectNum(projectNum + 1)
-    }
-
-    
+function Projects({projectsRef}) {    
     const myProjects = [
         {
             title: "Cinema E-Booking System",
@@ -63,46 +52,11 @@ function Projects({projectsRef}) {
         <div ref={projectsRef} className="projects-main">
             <h1>My Projects</h1>
 
-                <div className='project-container'>
-                    <div className='project-left'>
-                        <h2>{myProjects[projectNum].title}</h2> 
-                        <div className='codes-container'>
-                            {myProjects[projectNum].codes.map((code) =>
-                                <img className='project-img-code' src={code} alt='Used Coding Language'/>
-                            )}
-                        </div>
-                    </div>
-
-                    <div className='project-right'>
-                        <div>
-                            <h4>Description</h4>
-                            <p className='project-description'>{myProjects[projectNum].des}</p>
-                        </div>
-                        <div>
-                            <h4>Links</h4>
-                            {myProjects[projectNum].links.map((link) => 
-                                <a href={link}>Link</a>                          
-                            )}
-                        </div>
-
-                    </div>
-                </div>
-
-                {projectNum === 0?
-                    <></>
-                    :
-                    <button className='arrow-container' onClick={leftArrow}>
-                        <h3>{'<'}</h3>
-                    </button>
-                }
-
-                {projectNum === myProjects.length - 1?
-                    <></>
-                    :
-                    <button className='arrow-container' onClick={rightArrow}>
-                        <h3>{'>'}</h3>
-                    </button>
-                }
+            <div className='projects-container'>
+                <ProjectBox />
+                <ProjectBox />
+                <ProjectBox />
+            </div>
         </div>
     )
 }

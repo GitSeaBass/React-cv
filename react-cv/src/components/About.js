@@ -19,15 +19,13 @@ function About({aboutRef}) {
                     <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" des="HTML"/>
                     <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" des="Python"/>
                     <LangContainer img="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" des="Java"/>
-                    <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" des="C++"/>
-                    <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" des="C"/>
                 </div>
             </div>
 
             <hr />
 
             <div className="soft-skills-container">
-                <h3 className='about=header'>Other Skills</h3>
+                <h3 className='about-header'>Other Skills</h3>
 
             </div>
         </div>

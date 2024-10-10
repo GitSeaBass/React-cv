@@ -1,0 +1,20 @@
+.project {
+    background-color: white;
+    width: 25%;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    margin: auto;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-languages {
+    display: flex;
+    gap: 5%;
+    margin-left: 10%;
+}
