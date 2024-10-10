@@ -18,3 +18,9 @@
     gap: 5%;
     margin-left: 10%;
 }
+
+.project-code-img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
