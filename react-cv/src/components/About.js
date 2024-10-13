@@ -1,11 +1,9 @@
 import './About.css'
-import profile from '../assets/Profile.jpeg'
 import LangContainer from './LangContainer';
 
 function About({aboutRef}) {
     return (
         <div className="about-main" ref={aboutRef}>
-            <img src={profile} alt="Headshot"/>
             <p className="intro">Recent Computer Science graduate seeking a Front-End Web Developer position. Avid learner with a strong aptitude for new technologies and a passion to tackle web development challenges.</p>
             
             <hr />
@@ -25,7 +23,7 @@ function About({aboutRef}) {
             <hr />
 
             <div className="soft-skills-container">
-                <h3 className='about-header'>Other Skills</h3>
+                <h3 className='about-header'>Currently Learning</h3>
 
             </div>
         </div>

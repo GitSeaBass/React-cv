@@ -15,6 +15,10 @@ function NavBar({aboutRef, projectsRef, workRef}) {
 
     return (
         <div className="bar">
+            <div>
+                <button>Day/Night</button>
+            </div>
+
             <div className='button-container'>
                 <button className="nav" onClick={scrollAbout}>About</button>
                 <button className="nav" onClick={scrollProjects}>Projects</button>

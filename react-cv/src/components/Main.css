@@ -1,5 +1,46 @@
 .main {
-    background-image: linear-gradient(to bottom, rgb(199, 246, 245) 0%,#88dbfc 97%, rgb(159, 229, 252));
-    height: 98vh;
-    text-align: center;
+    height: 100vh;
+    margin: auto;
+    text-align: left;
+    background-color: transparent;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 8% auto 0 auto;
+    width: 70%;
+}
+
+.introduction {
+    margin-top: 200px;
+}
+
+.introduction > h1, h3 {
+    margin: 0;
+}
+
+.introduction > h1 {
+    font-size: 4em;
+}
+
+.introduction > h3 {
+    font-size: 1.5em;
+}
+
+.background {
+    position: absolute;
+    /*background-image: url(https://images6.alphacoders.com/132/1327974.png);*/
+    image-rendering: -webkit-optimize-contrast;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    transition-duration: 3s;
+}
+
+.headshot {
+    height: 500px;
+    border-radius: 20%;
+    object-fit: contain;
 }

@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Work from './components/Work';
 
 function App() {
+ 
   const mainRef = useRef(null)
   const aboutRef = useRef(null);
   const projectsRef = useRef(null)

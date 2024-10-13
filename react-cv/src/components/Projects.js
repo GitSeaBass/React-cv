@@ -2,6 +2,8 @@ import './Projects.css'
 import ProjectBox from './ProjectBox';
 
 function Projects({projectsRef}) {    
+    const githubIcon = "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+
     const myProjects = [
         {
             title: "Cinema E-Booking System",
@@ -13,7 +15,7 @@ function Projects({projectsRef}) {
                 'https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png',
                 'https://www.svgrepo.com/show/303251/mysql-logo.svg'
             ],
-            link: "",
+            link: "https://github.com/GitSeaBass/CinemaEBooking",
             des: "Worked within a 5 person group to create a full-stack cinema e-booking system. This application uses React for the frontend while using SpringBoot for the backend along with a MySQL database that stores movies and users. I primarily worked on the frontend, but assisted elsewhere when needed. We worked through deliverables by delegating work between ourselves and communicating the progress of our work."
         },
         {
@@ -25,7 +27,7 @@ function Projects({projectsRef}) {
                 'https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png',
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBwzWqFVu66ck-2u_nDBgLTZbR3cNjpUCbWg&s',
             ],
-            link: "",
+            link: "https://github.com/pinkertonne/webdevproj",
             des: "Worked within a group of 3 to create an image gallery where users can upload photos and view other users photos. React was used for the frontend while Node and MongoDB were used for the backend and database."
         },
         {
@@ -47,12 +49,12 @@ function Projects({projectsRef}) {
 
             <div className='projects-container'>
                 <div className='project-row'>
-                    <ProjectBox title={myProjects[0].title} des={myProjects[0].des} link={myProjects[0].link} codes={myProjects[0].codes} />
+                    <ProjectBox title={myProjects[0].title} des={myProjects[0].des} link={myProjects[0].link} codes={myProjects[0].codes} linkImg={githubIcon}/>
                     <div className='fill-div'></div>
                 </div>
                 <div className='project-row'>
                     <div className='fill-div'></div>
-                    <ProjectBox title={myProjects[1].title} des={myProjects[1].des} link={myProjects[1].link} codes={myProjects[1].codes}/>
+                    <ProjectBox title={myProjects[1].title} des={myProjects[1].des} link={myProjects[1].link} codes={myProjects[1].codes} linkImg={githubIcon}/>
                 </div>
                 <div className='project-row'>
                     <ProjectBox title={myProjects[2].title} des={myProjects[2].des} link={myProjects[2].link} codes={myProjects[2].codes}/>
