@@ -8,7 +8,7 @@
 
 .main-flex {
     display: flex;
-    justify-content: space-between;
+    gap: 150px;
     margin: 8% auto 0 auto;
     width: 70%;
 }
@@ -57,7 +57,9 @@
 }
 
 .socials {
-    margin-top: 10%;
+    margin-top: 12%;
+    margin-left: 40%;
+    white-space: nowrap;
 }
 
 .social-hr {
@@ -65,10 +67,16 @@
     width: 40%;
 }
 
+.vert-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    gap: 10px;
+}
+
 .socials-flex {
     display: flex;
     gap: 10%;
-    white-space: nowrap;
     margin-left: 10%;
 }
 
