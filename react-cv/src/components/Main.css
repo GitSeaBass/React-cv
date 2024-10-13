@@ -3,6 +3,7 @@
     margin: auto;
     text-align: left;
     background-color: transparent;
+    margin-bottom: 10%;
 }
 
 .main-flex {
@@ -13,10 +14,11 @@
 }
 
 .introduction {
-    margin-top: 200px;
+    margin-top: 100px;
+    width: 50%;
 }
 
-.introduction > h1, h3 {
+.introduction > h1, h3, h4 {
     margin: 0;
 }
 
@@ -28,13 +30,16 @@
     font-size: 1.5em;
 }
 
+.introduction > h4 {
+    margin-left: 5%;
+}
+
 .background {
     position: absolute;
     /*background-image: url(https://images6.alphacoders.com/132/1327974.png);*/
     image-rendering: -webkit-optimize-contrast;
     background-size: cover;
     height: 100vh;
-    width: 100vw;
     z-index: -1;
     transition-duration: 3s;
 }
@@ -43,4 +48,11 @@
     height: 500px;
     border-radius: 20%;
     object-fit: contain;
+}
+
+.sun {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transition: 3s;
 }

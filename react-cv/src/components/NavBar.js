@@ -16,7 +16,9 @@ function NavBar({aboutRef, projectsRef, workRef}) {
     return (
         <div className="bar">
             <div>
-                <button>Day/Night</button>
+                <button className="nav">
+                    Day/Night
+                </button>
             </div>
 
             <div className='button-container'>
