@@ -1,6 +1,6 @@
 import './NavBar.css'
 
-function NavBar({aboutRef, projectsRef, workRef, changeIsDay}) {
+function NavBar({aboutRef, projectsRef, workRef, changeIsLight}) {
     const scrollAbout = () => {
         aboutRef.current.scrollIntoView({behavior: "smooth"})
     }
@@ -16,7 +16,7 @@ function NavBar({aboutRef, projectsRef, workRef, changeIsDay}) {
     return (
         <div className="bar">
             <div>
-                <button onClick={changeIsDay} className="nav">
+                <button onClick={changeIsLight} className="nav">
                     Day/Night
                 </button>
             </div>

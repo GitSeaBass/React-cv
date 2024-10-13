@@ -1,21 +1,22 @@
 import './Main.css'
-import { useState } from 'react';
+import {  useContext } from 'react';
+import DisplayContext from '../context/DisplayContext';
 import profile from '../assets/Profile.jpeg'
 import sun from "../assets/sun.png"
 import moon from "../assets/Moon.png"
 import NavBar from "./NavBar";
 
 function Main({mainRef, aboutRef, projectsRef, workRef}) {
-    const [isDay, setIsDay] = useState(true)
-    const changeIsDay = () => {
-        setIsDay(!isDay)
+    const {isLight, setIsLight} = useContext(DisplayContext)
+    const changeIsLight = () => {
+        setIsLight(!isLight)
     }
 
     return (
         <>
         <div className='background'></div>
         <div ref={mainRef} className="main">
-            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef} changeIsDay={changeIsDay}/>
+            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef} changeIsLight={changeIsLight}/>
     
             <div className="main-flex">
                 <div className='introduction'>
@@ -29,7 +30,7 @@ function Main({mainRef, aboutRef, projectsRef, workRef}) {
                     <img src={profile} alt="Headshot" className="headshot"/>
                     <div className='socials'>
                         <hr className='social-hr'/>
-                        <h2>Contact Me and View My Work</h2>
+                        <h2>Contact Me or View My Work</h2>
                         <div className='socials-flex'>
                             <p>budder427@gmail.com</p>
                             <p>404-488-8236</p>
@@ -45,7 +46,7 @@ function Main({mainRef, aboutRef, projectsRef, workRef}) {
             </div>
         </div>
 
-        {isDay?
+        {isLight?
         <>
             <img className="sun" src={sun} alt="sun"/>
             <img className='moon-down' src={moon} alt="moon" />
