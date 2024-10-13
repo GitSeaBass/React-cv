@@ -3,7 +3,7 @@
     margin: auto;
     text-align: left;
     background-color: transparent;
-    margin-bottom: 10%;
+    margin-bottom: 30%;
 }
 
 .main-flex {
@@ -53,6 +53,13 @@
 .sun {
     position: absolute;
     top: 70%;
+    left: 10%;
+    transition: 2s;
+}
+
+.sun-down {
+    position: absolute;
+    top: 105%;
     left: 10%;
     transition: 3s;
 }

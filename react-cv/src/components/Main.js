@@ -1,14 +1,20 @@
 import './Main.css'
+import { useState } from 'react';
 import profile from '../assets/Profile.jpeg'
 import sun from "../assets/sun.png"
 import NavBar from "./NavBar";
 
 function Main({mainRef, aboutRef, projectsRef, workRef}) {
+    const [isDay, setIsDay] = useState(true)
+    const changeIsDay = () => {
+        setIsDay(!isDay)
+    }
+
     return (
         <>
         <div className='background'></div>
         <div ref={mainRef} className="main">
-            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef}/>
+            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef} changeIsDay={changeIsDay}/>
     
             <div className="main-flex">
                 <div className='introduction'>
@@ -20,7 +26,16 @@ function Main({mainRef, aboutRef, projectsRef, workRef}) {
                 <img src={profile} alt="Headshot" className="headshot"/>
             </div>
         </div>
-        <img className="sun" src={sun} alt="sun"/>
+
+        {isDay?
+        <>
+            <img className="sun" src={sun} alt="sun"/>
+        </>
+        :
+        <>
+            <img className="sun-down" src={sun} alt="sun"/>
+        </>
+        }
         </>
     )
 }
