@@ -8,7 +8,23 @@ import Work from './components/Work';
 
 function App() {
   const [isLight, setIsLight] = useState(true)
+  const [backColor, setBackColor] = useState('skyblue')
+  const changeBackColor = () => {
+    if (backColor === 'skyblue') {
+      setBackColor('darkblue')
+    } else {
+      setBackColor('skyblue')
+    }
+  }
 
+  const [textColor, setTextColor] = useState('black')
+  const changeTextColor = () => {
+    if (textColor === 'black') {
+      setTextColor('white')
+    } else {
+      setTextColor('black')
+    }
+  }
 
   const mainRef = useRef(null)
   const aboutRef = useRef(null);
@@ -20,7 +36,7 @@ function App() {
   }
 
   return (
-    <DisplayContext.Provider value={{isLight, setIsLight}}>
+    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor}}>
       <div className="App">
           <button className='top-button' onClick={scrollTop}>^</button>
           <Main mainRef={mainRef} aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef}/>
