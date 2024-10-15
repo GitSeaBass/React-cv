@@ -4,6 +4,7 @@ import DisplayContext from './context/DisplayContext';
 import Main from './components/Main';
 import About from './components/About';
 import Projects from './components/Projects';
+import InfoDisplay from './components/InfoDisplay';
 import Work from './components/Work';
 
 function App() {
@@ -40,9 +41,10 @@ function App() {
       <div className="App">
           <button className='top-button' onClick={scrollTop}>^</button>
           <Main mainRef={mainRef} aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef}/>
-          <About aboutRef={aboutRef}/>
+          <InfoDisplay aboutRef={aboutRef} workRef={workRef}/>
+          {/*<About aboutRef={aboutRef}/>*/}
           <Projects projectsRef={projectsRef}/>
-          <Work workRef={workRef}/>
+          {/*<Work workRef={workRef}/>*/}
       </div>
     </DisplayContext.Provider>
   );

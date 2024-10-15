@@ -3,7 +3,7 @@
     margin: auto;
     text-align: left;
     background-color: transparent;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
 }
 
 .main-flex {
@@ -91,6 +91,7 @@
     top: 70%;
     left: 35%;
     transition: 2s;
+    z-index: -1;
 }
 
 .sun-down {
@@ -98,6 +99,7 @@
     top: 105%;
     left: 35%;
     transition: 2s;
+    z-index: -1;
 }
 
 .moon {
@@ -105,6 +107,7 @@
     top: 60%;
     left: 10%;
     transition: 2s;
+    z-index: -1;
 }
 
 .moon-down {
@@ -112,4 +115,5 @@
     top: 105%;
     left: 10%;
     transition: 2s;
+    z-index: -1;
 }

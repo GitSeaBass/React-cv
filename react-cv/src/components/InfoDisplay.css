@@ -1,0 +1,25 @@
+.display-container {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    height: 800px;
+    background-color: white;
+}
+
+.display-selector {
+    border-bottom: 1px solid black;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    height: 40px;
+}
+
+.selector-button {
+    width: 50%;
+    font-size: 1.3em;
+}
+
+.selector-button:hover {
+    cursor: pointer;
+}
