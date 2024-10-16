@@ -9,12 +9,12 @@ import Work from './components/Work';
 
 function App() {
   const [isLight, setIsLight] = useState(true)
-  const [backColor, setBackColor] = useState('skyblue')
+  const [backColor, setBackColor] = useState('cornflowerblue')
   const changeBackColor = () => {
-    if (backColor === 'skyblue') {
+    if (backColor === 'cornflowerblue') {
       setBackColor('darkblue')
     } else {
-      setBackColor('skyblue')
+      setBackColor('cornflowerblue')
     }
   }
 

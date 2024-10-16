@@ -16,8 +16,17 @@ function InfoDisplay({aboutRef, workRef}) {
         <div className='display-background'>
             <div className='display-container'>
                 <div className='display-selector'>
-                    <button className='selector-button' onClick={changeAbout}>About</button>
-                    <button className='selector-button' onClick={changeWork}>Work Experience</button>
+                    {display === 'about'?
+                    <>
+                        <button className='selector-button off' onClick={changeAbout}>About</button>
+                        <button className='selector-button on' onClick={changeWork}>Work Experience</button>
+                    </>
+                    :
+                    <>
+                        <button className='selector-button on' onClick={changeAbout}>About</button>
+                        <button className='selector-button off' onClick={changeWork}>Work Experience</button>
+                    </>
+                    }     
                 </div>
 
                 <div className='display-main'>
