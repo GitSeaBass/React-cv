@@ -10,7 +10,13 @@ function NavBar({infoRef, projectsRef, changeIsLight, changeAbout, changeWork}) 
         projectsRef.current.scrollIntoView({behavior: "smooth"})
     }
 
-    const scrollInfo = () => {
+    const scrollAbout = () => {
+        changeAbout()
+        infoRef.current.scrollIntoView({behavior: "smooth"})
+    }
+
+    const scrollWork = () => {
+        changeWork()
         infoRef.current.scrollIntoView({behavior: "smooth"})
     }
 
@@ -29,9 +35,9 @@ function NavBar({infoRef, projectsRef, changeIsLight, changeAbout, changeWork}) 
             </div>
 
             <div className='button-container'>
-                <button className="nav" onClick={scrollInfo} style={{color: textColor}}>About</button>
+                <button className="nav" onClick={scrollAbout} style={{color: textColor}}>About</button>
                 <button className="nav" onClick={scrollProjects} style={{color: textColor}}>Projects</button>
-                <button className="nav" onClick={scrollInfo} style={{color: textColor}}>Work</button>
+                <button className="nav" onClick={scrollWork} style={{color: textColor}}>Work</button>
             </div>
         </div>
     )
