@@ -1,10 +1,13 @@
 .projects-main {
     min-height: 100vh;
     text-align: center;
+    transition: 2s;
 }
 
-.projects-main > h1 {
+.projects-header {
     padding: 2% 0;
+    margin: 0;
+    transition: 2s;
 }
 
 .projects-container {

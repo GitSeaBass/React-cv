@@ -1,4 +1,6 @@
 import './Projects.css'
+import { useContext } from 'react';
+import DisplayContext from '../context/DisplayContext';
 import ProjectBox from './ProjectBox';
 
 function Projects({projectsRef}) {    
@@ -42,10 +44,11 @@ function Projects({projectsRef}) {
 
     ]
     
-    
+    const {textColor, bgColor} = useContext(DisplayContext)
+
     return (
-        <div ref={projectsRef} className="projects-main">
-            <h1>My Projects</h1>
+        <div ref={projectsRef} className="projects-main" style={{backgroundColor: bgColor}}>
+            <h1 className='projects-header' style={{color: textColor}}>My Projects</h1>
 
             <div className='projects-container'>
                 <div className='project-row'>

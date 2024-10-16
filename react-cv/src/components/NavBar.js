@@ -31,7 +31,7 @@ function NavBar({infoRef, projectsRef, changeIsLight, changeAbout, changeWork}) 
         <div className="bar" style={{backgroundColor: backColor}}>
             <div>
                 <button onClick={changeLight} className="nav" style={{color: textColor}}>
-                    Day/Night
+                    Light/Dark
                 </button>
             </div>
 
