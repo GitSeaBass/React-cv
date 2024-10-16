@@ -2,23 +2,22 @@ import './Main.css'
 import {  useContext } from 'react';
 import DisplayContext from '../context/DisplayContext';
 import profile from '../assets/Profile.jpeg'
-import sun from "../assets/sun.png"
+import sun from "../assets/Sun transparent.png"
 import moon from "../assets/Moon.png"
 import NavBar from "./NavBar";
 
 function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
-    const {isLight, setIsLight} = useContext(DisplayContext)
+    const {isLight, setIsLight, textColor, bgColor} = useContext(DisplayContext)
     const changeIsLight = () => {
         setIsLight(!isLight)
     }
 
     return (
         <>
-        <div className='background'></div>
-        <div ref={mainRef} className="main">
+        <div ref={mainRef} className="main" style={{backgroundColor: bgColor}}>
             <NavBar infoRef={infoRef} projectsRef={projectsRef} changeIsLight={changeIsLight} changeAbout={changeAbout} changeWork={changeWork}/>
     
-            <div className="main-flex">
+            <div className="main-flex" style={{color: textColor}}>
                 <div className='introduction'>
                     <hr className='horizontal-line'/>
                     <h3>Hey, I'm</h3>
@@ -26,7 +25,7 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
                     <h4>Recent college graduate looking to start my career in web development. Graduated from the University of Georgia and currently residing in Atlanta, GA. Most proficient in React but love learning new coding languages.</h4>
                 </div>
 
-                <div className='vert-flex'>
+                <div className='vert-flex' style={{color: textColor}}>
                     <img src={profile} alt="Headshot" className="headshot"/>
                     <div className='socials'>
                         <hr className='social-hr'/>

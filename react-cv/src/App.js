@@ -10,7 +10,7 @@ function App() {
   const [backColor, setBackColor] = useState('cornflowerblue')
   const changeBackColor = () => {
     if (backColor === 'cornflowerblue') {
-      setBackColor('darkblue')
+      setBackColor('black')
     } else {
       setBackColor('cornflowerblue')
     }
@@ -24,6 +24,16 @@ function App() {
       setTextColor('black')
     }
   }
+
+  const [bgColor, setBGColor] = useState('white')
+  const changeBGColor = () => {
+    if (bgColor === 'white') {
+      setBGColor('dimgray')
+    } else {
+      setBGColor('white')
+    }
+  }
+
 
   const mainRef = useRef(null)
   const projectsRef = useRef(null)
@@ -42,7 +52,7 @@ function App() {
   }
 
   return (
-    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor}}>
+    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor, bgColor, changeBGColor}}>
       <div className="App">
           <button className='top-button' onClick={scrollTop}>^</button>
           <Main mainRef={mainRef} infoRef={infoRef} projectsRef={projectsRef} changeAbout={changeAbout} changeWork={changeWork}/>
