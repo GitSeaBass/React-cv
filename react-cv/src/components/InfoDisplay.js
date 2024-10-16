@@ -1,20 +1,12 @@
 import './InfoDisplay.css'
-import { useState } from 'react';
 import About from './About';
 import Work from './Work';
 
-function InfoDisplay({aboutRef, workRef}) {
-    const [display, setDisplay] = useState('about')
-    const changeAbout = () => {
-        setDisplay('about')
-    }
-    const changeWork = () => {
-        setDisplay('work')
-    }
+function InfoDisplay({infoRef, display, changeAbout, changeWork}) {
 
     return (
         <div className='display-background'>
-            <div className='display-container'>
+            <div className='display-container' ref={infoRef}>
                 <div className='display-selector'>
                     {display === 'about'?
                     <>
@@ -31,9 +23,9 @@ function InfoDisplay({aboutRef, workRef}) {
 
                 <div className='display-main'>
                     {display === 'about'?
-                        <About aboutRef={aboutRef}/>
+                        <About />
                     :
-                        <Work workRef={workRef}/>
+                        <Work />
                     }
                 </div>
             </div>

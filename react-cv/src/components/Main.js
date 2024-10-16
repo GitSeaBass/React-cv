@@ -6,7 +6,7 @@ import sun from "../assets/sun.png"
 import moon from "../assets/Moon.png"
 import NavBar from "./NavBar";
 
-function Main({mainRef, aboutRef, projectsRef, workRef}) {
+function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
     const {isLight, setIsLight} = useContext(DisplayContext)
     const changeIsLight = () => {
         setIsLight(!isLight)
@@ -16,7 +16,7 @@ function Main({mainRef, aboutRef, projectsRef, workRef}) {
         <>
         <div className='background'></div>
         <div ref={mainRef} className="main">
-            <NavBar aboutRef={aboutRef} projectsRef={projectsRef} workRef={workRef} changeIsLight={changeIsLight}/>
+            <NavBar infoRef={infoRef} projectsRef={projectsRef} changeIsLight={changeIsLight} changeAbout={changeAbout} changeWork={changeWork}/>
     
             <div className="main-flex">
                 <div className='introduction'>

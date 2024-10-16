@@ -1,8 +1,8 @@
 import './Work.css'
 
-function Work({workRef}) {
+function Work() {
     return (
-        <div ref={workRef} className='work-main'>
+        <div className='work-main'>
             <h1>My Work Experience</h1>
 
             <div className='jobs-container'>

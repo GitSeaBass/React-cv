@@ -1,9 +1,9 @@
 import './About.css'
 import LangContainer from './LangContainer';
 
-function About({aboutRef}) {
+function About() {
     return (
-        <div className="about-main" ref={aboutRef}>
+        <div className="about-main">
             <p className="intro">Recent Computer Science graduate seeking a Front-End Web Developer position. Avid learner with a strong aptitude for new technologies and a passion to tackle web development challenges.</p>
             
             <hr />
