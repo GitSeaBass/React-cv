@@ -19,7 +19,7 @@ function InfoDisplay({infoRef, display, changeAbout, changeWork}) {
                     :
                     <>
                         <button className='selector-button on' onClick={changeAbout}>About</button>
-                        <button className='selector-button of6f' onClick={changeWork}>Work Experience</button>
+                        <button className='selector-button off' onClick={changeWork}>Work Experience</button>
                     </>
                     }     
                 </div>
