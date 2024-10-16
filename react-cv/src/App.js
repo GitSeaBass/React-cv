@@ -34,6 +34,15 @@ function App() {
     }
   }
 
+  const [borderColor, setBorderColor] = useState('4px solid cornflowerblue')
+  const changeBorderColor = () => {
+    if (borderColor === '4px solid cornflowerblue') {
+      setBorderColor('4px solid black')
+    } else {
+      setBorderColor('4px solid cornflowerblue')
+    }
+  }
+
 
   const mainRef = useRef(null)
   const projectsRef = useRef(null)
@@ -52,7 +61,7 @@ function App() {
   }
 
   return (
-    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor, bgColor, changeBGColor}}>
+    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor, bgColor, changeBGColor, borderColor, changeBorderColor}}>
       <div className="App">
           <button className='top-button' onClick={scrollTop}>^</button>
           <Main mainRef={mainRef} infoRef={infoRef} projectsRef={projectsRef} changeAbout={changeAbout} changeWork={changeWork}/>
