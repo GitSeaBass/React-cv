@@ -3,7 +3,7 @@
     margin: auto;
     text-align: left;
     background-color: transparent;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .main-flex {
@@ -64,7 +64,7 @@
 
 .social-hr {
     margin-left: 0;
-    width: 40%;
+    width: 80%;
 }
 
 .vert-flex {
@@ -96,7 +96,7 @@
 
 .sun-down {
     position: absolute;
-    top: 105%;
+    top: 120%;
     left: 35%;
     transition: 2s;
     z-index: -1;

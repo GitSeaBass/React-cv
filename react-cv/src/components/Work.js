@@ -3,7 +3,7 @@ import './Work.css'
 function Work({workRef}) {
     return (
         <div ref={workRef} className='work-main'>
-            <h1>Work Experience</h1>
+            <h1>My Work Experience</h1>
 
             <div className='jobs-container'>
                 <div className='job'>

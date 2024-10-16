@@ -25,3 +25,7 @@
     object-fit: contain;
     border-radius: 10px;
 }
+
+.project-title {
+    font-size: 1.2em;
+}

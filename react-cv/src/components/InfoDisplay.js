@@ -13,18 +13,20 @@ function InfoDisplay({aboutRef, workRef}) {
     }
 
     return (
-        <div className='display-container'>
-            <div className='display-selector'>
-                <button className='selector-button' onClick={changeAbout}>About</button>
-                <button className='selector-button' onClick={changeWork}>Work Experience</button>
-            </div>
+        <div className='display-background'>
+            <div className='display-container'>
+                <div className='display-selector'>
+                    <button className='selector-button' onClick={changeAbout}>About</button>
+                    <button className='selector-button' onClick={changeWork}>Work Experience</button>
+                </div>
 
-            <div className='display-main'>
-                {display === 'about'?
-                    <About aboutRef={aboutRef}/>
-                :
-                    <Work workRef={workRef}/>
-                }
+                <div className='display-main'>
+                    {display === 'about'?
+                        <About aboutRef={aboutRef}/>
+                    :
+                        <Work workRef={workRef}/>
+                    }
+                </div>
             </div>
         </div>
     )
