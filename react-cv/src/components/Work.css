@@ -15,7 +15,6 @@
     display: flex;
     flex-direction: column;
     gap: 50px;
-    color: rgb(79, 79, 79);
 }
 
 .jobs-container-dark {
@@ -28,9 +27,7 @@
 }
 
 .job {
-    width: 45%;
-    background-color: white;
-    border: 3px solid black;
+    width: 65%;
     border-radius: 10px;
 }
 

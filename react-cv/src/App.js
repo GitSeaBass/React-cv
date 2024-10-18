@@ -10,12 +10,12 @@ function App() {
   // current mode (light or dark)
   const [isLight, setIsLight] = useState(true)
   //used for navbar
-  const [backColor, setBackColor] = useState('cornflowerblue')
+  const [backColor, setBackColor] = useState('#146C94')
   const changeBackColor = () => {
-    if (backColor === 'cornflowerblue') {
+    if (backColor === '#146C94') {
       setBackColor('#393053')
     } else {
-      setBackColor('cornflowerblue')
+      setBackColor('#146C94')
     }
   }
 
@@ -30,22 +30,22 @@ function App() {
   }
 
   //main background color of site
-  const [bgColor, setBGColor] = useState('white')
+  const [bgColor, setBGColor] = useState('#F6F1F1')
   const changeBGColor = () => {
-    if (bgColor === 'white') {
+    if (bgColor === '#F6F1F1') {
       setBGColor('#18122B')
     } else {
-      setBGColor('white')
+      setBGColor('#F6F1F1')
     }
   }
 
   // used for outside border of InfoDisplay
-  const [borderColor, setBorderColor] = useState('4px solid cornflowerblue')
+  const [borderColor, setBorderColor] = useState('4px solid #146C94')
   const changeBorderColor = () => {
-    if (borderColor === '4px solid cornflowerblue') {
+    if (borderColor === '4px solid #146C94') {
       setBorderColor('4px solid #393053')
     } else {
-      setBorderColor('4px solid cornflowerblue')
+      setBorderColor('4px solid #146C94')
     }
   }
 
@@ -60,12 +60,12 @@ function App() {
   }
 
   // background color for display containers more to the forefront
-  const [boxBackgroundColor, setBoxBackgroundColor] = useState('white')
+  const [boxBackgroundColor, setBoxBackgroundColor] = useState('#F6F1F1')
   const changeBoxBackgroundColor = () => {
-    if (boxBackgroundColor === 'white') {
+    if (boxBackgroundColor === '#F6F1F1') {
       setBoxBackgroundColor('#635985')
     } else {
-      setBoxBackgroundColor('white')
+      setBoxBackgroundColor('#F6F1F1')
     }
   }
 
