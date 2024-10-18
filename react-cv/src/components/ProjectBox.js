@@ -1,8 +1,12 @@
 import './ProjectBox.css'
+import { useContext } from 'react';
+import DisplayContext from '../context/DisplayContext';
 
 function ProjectBox({ title, des, link, codes, linkImg}) {
+    const {boxBackgroundColor, textColor, borderColor} = useContext(DisplayContext)
+
     return (
-        <div className='project'>
+        <div className='project' style={{backgroundColor: boxBackgroundColor, color: textColor, border: borderColor}}>
             <div className='project-header'>
                 <h4 className='project-title'>{title}</h4>
                 <div className='project-link'>

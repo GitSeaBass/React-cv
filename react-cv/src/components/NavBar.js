@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import DisplayContext from '../context/DisplayContext'
 
 function NavBar({infoRef, projectsRef, changeIsLight, changeAbout, changeWork}) {
-    const {backColor, changeBackColor, textColor, changeTextColor, changeBGColor, changeBorderColor} = useContext(DisplayContext)
+    const {backColor, changeBackColor, textColor, changeTextColor, changeBGColor, changeBorderColor, changeHrColor, changeBoxBackgroundColor} = useContext(DisplayContext)
 
 
     const scrollProjects = () => {
@@ -26,6 +26,8 @@ function NavBar({infoRef, projectsRef, changeIsLight, changeAbout, changeWork}) 
         changeTextColor()
         changeBGColor()
         changeBorderColor()
+        changeHrColor()
+        changeBoxBackgroundColor()
     }
 
     return (

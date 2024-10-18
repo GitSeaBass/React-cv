@@ -1,12 +1,16 @@
 import './About.css'
+import { useContext } from 'react';
+import DisplayContext from '../context/DisplayContext';
 import LangContainer from './LangContainer';
 
 function About() {
+    const {hrColor} = useContext(DisplayContext)
+
     return (
         <div className="about-main">
             <p className="intro">Recent Computer Science graduate seeking a Front-End Web Developer position. Avid learner with a strong aptitude for new technologies and a passion to tackle web development challenges.</p>
             
-            <hr />
+            <hr style={{border: hrColor}}/>
             
             <div className="experience-div">
                 <h3 className='about-header'>Experience With</h3>
@@ -20,7 +24,7 @@ function About() {
                 </div>
             </div>
 
-            <hr />
+            <hr style={{border: hrColor}}/>
 
             <div className="soft-skills-container">
                 <h3 className='about-header'>Currently Learning</h3>

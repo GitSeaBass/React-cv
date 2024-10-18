@@ -7,7 +7,7 @@ import moon from "../assets/Moon.png"
 import NavBar from "./NavBar";
 
 function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
-    const {isLight, setIsLight, textColor, bgColor} = useContext(DisplayContext)
+    const {isLight, setIsLight, textColor, bgColor, hrColor} = useContext(DisplayContext)
     const changeIsLight = () => {
         setIsLight(!isLight)
     }
@@ -19,7 +19,7 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
     
             <div className="main-flex" style={{color: textColor}}>
                 <div className='introduction'>
-                    <hr className='horizontal-line'/>
+                    <hr className='horizontal-line' style={{border: hrColor}}/>
                     <h3>Hey, I'm</h3>
                     <h1>Sebastian Garcia</h1>
                     <h4>Recent college graduate looking to start my career in web development. Graduated from the University of Georgia and currently residing in Atlanta, GA. Most proficient in React but love learning new coding languages.</h4>
@@ -28,7 +28,7 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
                 <div className='vert-flex' style={{color: textColor}}>
                     <img src={profile} alt="Headshot" className="headshot"/>
                     <div className='socials'>
-                        <hr className='social-hr'/>
+                        <hr className='social-hr' style={{border: hrColor}}/>
                         <h2>Contact Me or View My Work</h2>
                         <div className='socials-flex'>
                             <p>budder427@gmail.com</p>
