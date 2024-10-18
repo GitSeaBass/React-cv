@@ -22,7 +22,8 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
                     <hr className='horizontal-line' style={{border: hrColor}}/>
                     <h3>Hey, I'm</h3>
                     <h1>Sebastian Garcia</h1>
-                    <h4>Recent college graduate looking to start my career in web development. Graduated from the University of Georgia and currently residing in Atlanta, GA. Most proficient in React but love learning new coding languages.</h4>
+                    <h4>📍 Atlanta, GA 📍</h4>
+                    <h4>Recent college graduate of the University of Georgia looking to start my career in web development. Most proficient in React but love learning new coding languages.</h4>
                 </div>
 
                 <div className='vert-flex' style={{color: textColor}}>

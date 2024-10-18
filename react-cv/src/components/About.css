@@ -24,3 +24,10 @@ hr {
     justify-content: space-evenly;
     margin: 1% 0;
 }
+
+.coding-learn-flex {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 1% 0;
+}

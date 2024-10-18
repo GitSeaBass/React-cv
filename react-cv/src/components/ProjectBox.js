@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import DisplayContext from '../context/DisplayContext';
 
 function ProjectBox({ title, des, link, codes, linkImg}) {
-    const {boxBackgroundColor, textColor, borderColor} = useContext(DisplayContext)
+    const {boxBackgroundColor, textColor, borderColor, codeColor} = useContext(DisplayContext)
 
     return (
         <div className='project' style={{backgroundColor: boxBackgroundColor, color: textColor, border: borderColor}}>
@@ -25,7 +25,7 @@ function ProjectBox({ title, des, link, codes, linkImg}) {
             <div className='project-languages'>
                 {codes.map((code) => 
                     <div>
-                        <img className='project-code-img' src={code} alt="Lang"/>
+                        <p className='codename-display' style={{backgroundColor: codeColor}}>{code}</p>
                     </div>
                 )}
             </div>

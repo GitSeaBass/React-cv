@@ -15,9 +15,11 @@
 }
 
 .project-languages {
-    display: flex;
-    gap: 5%;
-    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+    margin-left: 1%;
+    margin-right: 10%;
 }
 
 .project-code-img {
@@ -29,4 +31,13 @@
 
 .project-title {
     font-size: 1.2em;
+}
+
+.codename-display {
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2% 0;
 }

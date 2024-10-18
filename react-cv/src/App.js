@@ -69,6 +69,27 @@ function App() {
     }
   }
 
+  // background color of code box
+  const [codeColor, setCodeColor] = useState('#FEFF86')
+  const changeCodeColor = () => {
+    if (codeColor === '#FEFF86') {
+      setCodeColor('#F8E559')
+    } else {
+      setCodeColor('#FEFF86')
+    }
+  }
+
+  // changes between light and dark
+  const changeColorMode = () => {
+    changeBackColor()
+    changeTextColor()
+    changeBGColor()
+    changeBorderColor()
+    changeHrColor()
+    changeBoxBackgroundColor()
+    changeCodeColor()
+  }
+
 
   const mainRef = useRef(null)
   const projectsRef = useRef(null)
@@ -87,7 +108,7 @@ function App() {
   }
 
   return (
-    <DisplayContext.Provider value={{isLight, setIsLight, backColor, changeBackColor, textColor, changeTextColor, bgColor, changeBGColor, borderColor, changeBorderColor, hrColor, changeHrColor, boxBackgroundColor, changeBoxBackgroundColor}}>
+    <DisplayContext.Provider value={{isLight, setIsLight, backColor, textColor, bgColor, borderColor, hrColor, boxBackgroundColor, codeColor, changeColorMode}}>
       <div className="App">
           <button className='top-button' onClick={scrollTop} style={{color: textColor, backgroundColor: backColor}}>^</button>
           <Main mainRef={mainRef} infoRef={infoRef} projectsRef={projectsRef} changeAbout={changeAbout} changeWork={changeWork}/>

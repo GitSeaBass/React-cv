@@ -26,9 +26,12 @@ function About() {
 
             <hr style={{border: hrColor}}/>
 
-            <div className="soft-skills-container">
+            <div className="learning-container">
                 <h3 className='about-header'>Currently Learning</h3>
-
+                <div className='coding-learn-flex'>
+                    <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" des="Angular" />
+                    <LangContainer img="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" des="Typescript" />
+                </div>
             </div>
         </div>
     )
