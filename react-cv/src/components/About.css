@@ -15,6 +15,11 @@ hr {
     border: 1px solid black;
 }
 
+.middle-hr {
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
 .about-header {
     margin: 2% 0;
 }

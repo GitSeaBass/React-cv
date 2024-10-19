@@ -1,6 +1,7 @@
 import './Main.css'
 import {  useContext } from 'react';
 import DisplayContext from '../context/DisplayContext';
+import PDF from '../assets/Resume.pdf'
 import profile from '../assets/Profile.jpeg'
 import sun from "../assets/Sun transparent.png"
 import moon from "../assets/Moon.png"
@@ -10,6 +11,10 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
     const {isLight, setIsLight, textColor, bgColor, hrColor} = useContext(DisplayContext)
     const changeIsLight = () => {
         setIsLight(!isLight)
+    }
+
+    const openResume = () => {
+        window.open(PDF)
     }
 
     return (
@@ -24,6 +29,7 @@ function Main({mainRef, infoRef, projectsRef, changeAbout, changeWork}) {
                     <h1>Sebastian Garcia</h1>
                     <h4>📍 Atlanta, GA 📍</h4>
                     <h4>Recent college graduate of the University of Georgia looking to start my career in web development. Most proficient in React but love learning new coding languages.</h4>
+                    <button className='resume-button' onClick={openResume}> Resume </button>
                 </div>
 
                 <div className='vert-flex' style={{color: textColor}}>

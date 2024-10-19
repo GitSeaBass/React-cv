@@ -24,7 +24,7 @@ function About() {
                 </div>
             </div>
 
-            <hr style={{border: hrColor}}/>
+            <hr className='middle-hr' style={{border: hrColor}}/>
 
             <div className="learning-container">
                 <h3 className='about-header'>Currently Learning</h3>

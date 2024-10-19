@@ -23,6 +23,20 @@
     transition: 2s;
 }
 
+.resume-button {
+    border-radius: 5px;
+    background-color: #E4003A;
+    padding: 1%;
+    margin-left: 7%;
+    margin-top: 2%;
+    font-size: 1.2em;
+    border: none;
+}
+
+.resume-button:hover {
+    cursor: pointer;
+}
+
 .introduction {
     margin-top: 10px;
     width: 50%;

@@ -1,9 +1,14 @@
 import './ProjectBox.css'
 import { useContext } from 'react';
 import DisplayContext from '../context/DisplayContext';
+import Paper from '../assets/Paper.pdf'
 
 function ProjectBox({ title, des, link, codes, linkImg}) {
     const {boxBackgroundColor, textColor, borderColor, codeColor} = useContext(DisplayContext)
+
+    const openPaper = () => {
+        window.open(Paper)
+    }
 
     return (
         <div className='project' style={{backgroundColor: boxBackgroundColor, color: textColor, border: borderColor}}>
@@ -12,10 +17,12 @@ function ProjectBox({ title, des, link, codes, linkImg}) {
                 <div className='project-link'>
                     {link !==""? 
                         <a href={link} target='_blank' rel='noopener noreferrer'>
-                            <img className="project-code-img" src={linkImg} alt="GitHub Link"/>
+                            <img className="project-code-img" src={linkImg} alt="Link"/>
                         </a>
                         :
-                        <></>
+                        <div className='paper-button' onClick={openPaper}>
+                            <img className="project-code-img" src={linkImg} alt="Link"/>
+                        </div>
                     }
                 </div>
             </div>

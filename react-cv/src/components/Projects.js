@@ -5,6 +5,7 @@ import ProjectBox from './ProjectBox';
 
 function Projects({projectsRef}) {    
     const githubIcon = "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"
+    const pdfIcon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGAA4Wd4bco5Xv33GasXrnDdQT5OFXwa3HUQ&s"
 
     const myProjects = [
         {
@@ -60,7 +61,7 @@ function Projects({projectsRef}) {
                     <ProjectBox title={myProjects[1].title} des={myProjects[1].des} link={myProjects[1].link} codes={myProjects[1].codes} linkImg={githubIcon}/>
                 </div>
                 <div className='project-row'>
-                    <ProjectBox title={myProjects[2].title} des={myProjects[2].des} link={myProjects[2].link} codes={myProjects[2].codes}/>
+                    <ProjectBox title={myProjects[2].title} des={myProjects[2].des} link={myProjects[2].link} codes={myProjects[2].codes} linkImg={pdfIcon}/>
                     <div className='fill-div'></div>
                 </div>
             </div>
