@@ -8,7 +8,9 @@ function About() {
 
     return (
         <div className="about-main">
-            <p className="intro">Recent Computer Science graduate seeking a Front-End Web Developer position. Avid learner with a strong aptitude for new technologies and a passion to tackle web development challenges.</p>
+            <p className="intro">
+                I graduated from the University of Georgia with a degree in Computer Science and Honors. I first began learning web development in React, but have recently began learning Angular.
+            </p>
             
             <hr style={{border: hrColor}}/>
             
