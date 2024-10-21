@@ -1,5 +1,6 @@
 .App {
   caret-color: transparent;
+  cursor: default;
 }
 
 .App-logo {
