@@ -13,13 +13,13 @@ function InfoDisplay({infoRef, display, changeAbout, changeWork}) {
                 <div className='display-selector' style={{backgroundColor: backColor, border: borderColor}}>
                     {display === 'about'?
                     <>
-                        <button className='selector-button off' onClick={changeAbout} style={{backgroundColor: backColor}}>About</button>
+                        <button className='selector-button off' onClick={changeAbout}>About</button>
                         <button className='selector-button on' onClick={changeWork}>Work Experience</button>
                     </>
                     :
                     <>
                         <button className='selector-button on' onClick={changeAbout}>About</button>
-                        <button className='selector-button off' onClick={changeWork} style={{backgroundColor: backColor}}>Work Experience</button>
+                        <button className='selector-button off' onClick={changeWork}>Work Experience</button>
                     </>
                     }     
                 </div>

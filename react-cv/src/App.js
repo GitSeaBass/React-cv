@@ -4,6 +4,7 @@ import DisplayContext from './context/DisplayContext';
 import Main from './components/Main';
 import Projects from './components/Projects';
 import InfoDisplay from './components/InfoDisplay';
+import BottomBar from './components/BottomBar';
 
 function App() {
 
@@ -109,11 +110,12 @@ function App() {
 
   return (
     <DisplayContext.Provider value={{isLight, setIsLight, backColor, textColor, bgColor, borderColor, hrColor, boxBackgroundColor, codeColor, changeColorMode}}>
-      <div className="App">
+      <div className="App" style={{background: bgColor}}>
           <button className='top-button' onClick={scrollTop} style={{color: textColor, backgroundColor: backColor}}>^</button>
           <Main mainRef={mainRef} infoRef={infoRef} projectsRef={projectsRef} changeAbout={changeAbout} changeWork={changeWork}/>
           <InfoDisplay infoRef={infoRef} display={display} changeAbout={changeAbout} changeWork={changeWork}/>
           <Projects projectsRef={projectsRef}/>
+          <BottomBar />
       </div>
     </DisplayContext.Provider>
   );
