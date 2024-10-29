@@ -1,6 +1,6 @@
 .main {
     position: relative;
-    height: 100vh;
+    height: 100%;
     margin: auto;
     text-align: left;
     background-color: transparent;
@@ -107,7 +107,7 @@
 
 .sun-down {
     position: absolute;
-    top: 120%;
+    top: 150%;
     left: 35%;
     transition: 2s;
     z-index: 1;
@@ -124,9 +124,21 @@
 
 .moon-down {
     position: absolute;
-    top: 120%;
+    top: 150%;
     left: 10%;
     transition: 2s;
     z-index: 1;
     width: 15%;
+}
+
+@media screen and (max-width: 1350px) {
+    .sun {
+        aspect-ratio: 1;
+        width: 300px;
+    }
+
+    .moon {
+        aspect-ratio: 1;
+        width: 200px;
+    }
 }
