@@ -1,5 +1,5 @@
 import './App.css';
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import DisplayContext from './context/DisplayContext';
 import Main from './components/Main';
 import Projects from './components/Projects';
@@ -7,16 +7,21 @@ import InfoDisplay from './components/InfoDisplay';
 import BottomBar from './components/BottomBar';
 
 function App() {
+  useEffect(() => {
+    document.title = "Sebastian Garcia"
+  }, [])
+
 
   // current mode (light or dark)
   const [isLight, setIsLight] = useState(true)
+
   //used for navbar
-  const [backColor, setBackColor] = useState('#146C94')
+  const [backColor, setBackColor] = useState('#C6E7FF')
   const changeBackColor = () => {
-    if (backColor === '#146C94') {
+    if (backColor === '#C6E7FF') {
       setBackColor('#393053')
     } else {
-      setBackColor('#146C94')
+      setBackColor('#C6E7FF')
     }
   }
 
@@ -41,12 +46,12 @@ function App() {
   }
 
   // used for outside border of InfoDisplay
-  const [borderColor, setBorderColor] = useState('4px solid #146C94')
+  const [borderColor, setBorderColor] = useState('4px solid #133E87')
   const changeBorderColor = () => {
-    if (borderColor === '4px solid #146C94') {
+    if (borderColor === '4px solid #133E87') {
       setBorderColor('4px solid #393053')
     } else {
-      setBorderColor('4px solid #146C94')
+      setBorderColor('4px solid #133E87')
     }
   }
 
@@ -80,6 +85,16 @@ function App() {
     }
   }
 
+  // about work experience div background color
+  const [aboutWorkColor, setAboutWorkColor] = useState('#133E87')
+  const changeAboutWorkColor = () => {
+    if (aboutWorkColor === '#133E87') {
+      setAboutWorkColor('#393053')
+    } else {
+      setAboutWorkColor('#133E87')
+    }
+  }
+
   // changes between light and dark
   const changeColorMode = () => {
     changeBackColor()
@@ -89,6 +104,7 @@ function App() {
     changeHrColor()
     changeBoxBackgroundColor()
     changeCodeColor()
+    changeAboutWorkColor()
   }
 
 
@@ -109,7 +125,7 @@ function App() {
   }
 
   return (
-    <DisplayContext.Provider value={{isLight, setIsLight, backColor, textColor, bgColor, borderColor, hrColor, boxBackgroundColor, codeColor, changeColorMode}}>
+    <DisplayContext.Provider value={{isLight, setIsLight, backColor, textColor, bgColor, borderColor, hrColor, boxBackgroundColor, codeColor, changeColorMode, aboutWorkColor}}>
       <div className="App" style={{background: bgColor}}>
           <button className='top-button' onClick={scrollTop} style={{color: textColor, backgroundColor: backColor}}>^</button>
           <Main mainRef={mainRef} infoRef={infoRef} projectsRef={projectsRef} changeAbout={changeAbout} changeWork={changeWork}/>

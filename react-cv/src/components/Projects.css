@@ -1,6 +1,8 @@
 .projects-main {
     min-height: 100vh;
     transition: 2s;
+    position: relative;
+    z-index: 2;
 }
 
 .projects-header {

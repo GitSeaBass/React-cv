@@ -5,12 +5,12 @@ import About from './About';
 import Work from './Work';
 
 function InfoDisplay({infoRef, display, changeAbout, changeWork}) {
-    const {backColor, bgColor, borderColor, boxBackgroundColor, textColor} = useContext(DisplayContext)
+    const { bgColor, borderColor, boxBackgroundColor, textColor, aboutWorkColor} = useContext(DisplayContext)
 
     return (
         <div className='display-background' style={{backgroundColor: bgColor}}>
             <div className='display-container' ref={infoRef} style={{border: borderColor, backgroundColor: boxBackgroundColor, color: textColor}}>
-                <div className='display-selector' style={{backgroundColor: backColor, border: borderColor}}>
+                <div className='display-selector' style={{backgroundColor: aboutWorkColor, border: borderColor}}>
                     {display === 'about'?
                     <>
                         <button className='selector-button off' onClick={changeAbout}>About</button>
