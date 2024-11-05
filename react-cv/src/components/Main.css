@@ -142,3 +142,43 @@
         width: 200px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .introduction {
+        width: 100%;
+    }
+
+    .headshot {
+        height: 300px;
+        margin-top: 20%;
+        margin-left: 15%;
+    }
+
+    .socials {
+        margin-left: 0;
+    }
+
+    .main-flex {
+        display: block;
+    }
+
+    .vert-flex {
+        display: block;
+    }
+
+    .sun {
+        display: none;
+    }
+
+    .sun-down {
+        display: none;
+    }
+
+    .moon {
+        display: none;
+    }
+
+    .moon-down {
+        display: none;
+    }
+}

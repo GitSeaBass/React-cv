@@ -1,6 +1,12 @@
 .code-img {
     height: 80px;
-    width: 80px;
+    aspect-ratio: 1;
     object-fit: contain;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .code-img {
+        height: 70px;
+    }
 }

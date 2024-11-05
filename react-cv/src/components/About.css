@@ -36,3 +36,22 @@ hr {
     gap: 10%;
     margin: 1% 0;
 }
+
+@media screen and (max-width: 800px) {
+    .coding-lang-flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .intro {
+        width: 95%;
+    }
+
+    .top-hr {
+        margin-bottom: 10%;
+    }
+
+    .middle-hr {
+        margin-bottom: 10%;
+    }
+}

@@ -12,7 +12,7 @@ function About() {
                 I graduated from the University of Georgia with a degree in Computer Science with Honors. I first began learning web development in React, but have recently began learning Angular.
             </p>
             
-            <hr style={{border: hrColor}}/>
+            <hr className='top-hr' style={{border: hrColor}}/>
             
             <div className="experience-div">
                 <h3 className='about-header'>Experience With</h3>

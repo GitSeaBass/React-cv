@@ -26,3 +26,13 @@
 .fill-div {
     width: 35%;
 }
+
+@media screen and (max-width: 800px) {
+    .fill-div {
+        width: 0;
+    }
+
+    .projects-header {
+        margin-top: 10%;
+    }
+}
